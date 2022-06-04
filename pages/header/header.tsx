@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function firstPage() {
+export default function header() {
   return (
     <>
-      <p>hllo</p>
+      <div>hello</div>
     </>
   );
 }
