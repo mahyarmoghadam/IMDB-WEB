@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <nav
         style={{
-          backgroundColor: "#121212",
+          // backgroundColor: "#121212",
           display: "flex",
           padding: "10px 5px",
           justifyContent: "center",
