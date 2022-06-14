@@ -4,199 +4,217 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Minion1 from './minion1.png';
 import MinionBG from './minion-BG.jpg';
+import Image from "next/image";
 
 
 export default function FirstPage() {
   return (
     <>
       <div
+        className="w-full h-screen"
         style={{
           backgroundImage: `url(${MinionBG.src})`,
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-          minHeight: '100%'
-          // height: '100vh'
-        }}>
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <Header />
-        <div className='col-12'
+        <div
+          className="columns-12 w-full"
           style={{
-            width: '100%',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'space-around',
+            // height: '100vh',
+            display: "flex",
+            justifyContent: "space-around",
             // paddingBottom: '20px'
-          }}>
-
+          }}
+        >
           <div
-            style={{
-              width: '50%'
-            }}>
+            className="columns-6 w-full"
+            // style={{
+            //   width: "50%",
+            // }}
+          >
             <p>helo</p>
           </div>
 
           <div
+            className="columns-6 w-full"
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'flex-end;',
-              flexDirection: 'column'
-            }}>
-
+              // width: "50%",
+              display: "flex",
+              justifyContent: "flex-end;",
+              flexDirection: "column",
+            }}
+          >
             <div
               style={{
-                display: 'flex',
-                marginBottom: '101px'
-              }}>
-
-
+                display: "flex",
+                marginBottom: "101px",
+              }}
+            >
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  flexDirection: 'column',
-                  width: '20%',
-                  height: '205px',
-                  margin: '10px'
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  width: "20%",
+                  height: "205px",
+                  margin: "10px",
                 }}
               >
-                <img
+                <Image
                   style={{
-                    width: '100%',
-                    height: '180px',
                     backgroundImage: `url(${Minion1.src})`,
-                    borderRadius: '6px'
+                    borderRadius: "6px",
                   }}
-                  src={Minion1.src}>
-                </img>
+                  src={Minion1.src}
+                  alt="Landscape picture"
+                  width={"100%"}
+                  height={"180px"}
+                />
                 <p
                   style={{
-                    color: 'white'
-                  }}>Despicable Me1
+                    color: "white",
+                  }}
+                >
+                  Despicable Me1
                 </p>
               </div>
 
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  flexDirection: 'column',
-                  width: '20%',
-                  height: '205px',
-                  margin: '10px'
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  width: "20%",
+                  height: "205px",
+                  margin: "10px",
                 }}
               >
-                <img
+                <Image
                   style={{
-                    width: '100%',
-                    height: '180px',
                     backgroundImage: `url(${Minion1.src})`,
-                    borderRadius: '6px'
+                    borderRadius: "6px",
                   }}
-                  src={Minion1.src}>
-                </img>
+                  src={Minion1.src}
+                  alt="Landscape picture"
+                  width={"100%"}
+                  height={"180px"}
+                />
                 <p
                   style={{
-                    color: 'white'
-                  }}>Despicable Me1
+                    color: "white",
+                  }}
+                >
+                  Despicable Me1
                 </p>
               </div>
 
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  flexDirection: 'column',
-                  width: '20%',
-                  height: '205px',
-                  margin: '10px'
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  width: "20%",
+                  height: "205px",
+                  margin: "10px",
                 }}
               >
-                <img
+                <Image
                   style={{
-                    width: '100%',
-                    height: '180px',
                     backgroundImage: `url(${Minion1.src})`,
-                    borderRadius: '6px'
+                    borderRadius: "6px",
                   }}
-                  src={Minion1.src}>
-                </img>
-
+                  src={Minion1.src}
+                  alt="Landscape picture"
+                  width={"100%"}
+                  height={"180px"}
+                />
                 <p
                   style={{
-                    color: 'white'
-                  }}>Despicable Me1
+                    color: "white",
+                  }}
+                >
+                  Despicable Me1
                 </p>
               </div>
 
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  flexDirection: 'column',
-                  width: '20%',
-                  height: '205px',
-                  margin: '10px'
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  width: "20%",
+                  height: "205px",
+                  margin: "10px",
                 }}
               >
-                <img
+                <Image
                   style={{
-                    width: '100%',
-                    height: '180px',
                     backgroundImage: `url(${Minion1.src})`,
-                    borderRadius: '6px'
+                    borderRadius: "6px",
                   }}
-                  src={Minion1.src}>
-                </img>
+                  src={Minion1.src}
+                  alt="Landscape picture"
+                  width={100}
+                  height={"180px"}
+                />
                 <p
                   style={{
-                    color: 'white'
-                  }}>Despicable Me1
+                    color: "white",
+                  }}
+                >
+                  Despicable Me1
                 </p>
               </div>
             </div>
 
             <div
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                width: '100%',
-                marginBottom: '20px',
-                padding: '0px 20px'
-              }}>
-
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                marginBottom: "20px",
+                padding: "0px 20px",
+              }}
+            >
               <div
                 style={{
-                  display: 'flex',
-                  width: '50%'
-                }}>
+                  display: "flex",
+                  width: "50%",
+                }}
+              >
                 <button
                   style={{
-                    backgroundColor: '#cdcdcda6',
-                    width: '11%',
-                    height: '35px',
-                    borderRadius: '50%'
-                  }}>
+                    backgroundColor: "#cdcdcda6",
+                    width: "11%",
+                    height: "35px",
+                    borderRadius: "50%",
+                  }}
+                >
                   <FontAwesomeIcon
                     icon={faChevronLeft}
                     style={{
                       fontSize: 17,
-                      color: 'white'
+                      color: "white",
                     }}
                   />
                 </button>
 
                 <button
                   style={{
-                    backgroundColor: '#cdcdcda6',
-                    width: '11%',
-                    height: '35px',
-                    borderRadius: '50%'
-                  }}>
+                    backgroundColor: "#cdcdcda6",
+                    width: "11%",
+                    height: "35px",
+                    borderRadius: "50%",
+                  }}
+                >
                   <FontAwesomeIcon
                     icon={faChevronRight}
                     style={{
                       fontSize: 17,
-                      color: 'white'
+                      color: "white",
                     }}
                   />
                 </button>
@@ -204,31 +222,34 @@ export default function FirstPage() {
 
               <div
                 style={{
-                  display: 'flex',
-                  justifyContent: 'flex-end',
-                  width: '50%',
-                  alignItems: 'center',
-                }}>
-
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  width: "50%",
+                  alignItems: "center",
+                }}
+              >
                 <p
                   style={{
-                    color: 'white'
-                  }}>
+                    color: "white",
+                  }}
+                >
                   01
                 </p>
 
                 <div
                   style={{
-                    width: '10%',
-                    height: '2px',
-                    margin: '0 14px',
-                    backgroundColor: 'white'
-                  }}></div>
+                    width: "10%",
+                    height: "2px",
+                    margin: "0 14px",
+                    backgroundColor: "white",
+                  }}
+                ></div>
 
                 <p
                   style={{
-                    color: 'white'
-                  }}>
+                    color: "white",
+                  }}
+                >
                   01
                 </p>
               </div>
@@ -238,7 +259,6 @@ export default function FirstPage() {
 
         {/* <Slider /> */}
       </div>
-
     </>
   );
 }

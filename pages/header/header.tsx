@@ -1,13 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons";
+// import styles from "";
 
 export default function Header() {
   return (
     <>
       <nav
+        // className={styles.headerBody}
         style={{
-          // backgroundColor: "#121212",
           display: "flex",
           padding: "10px 5px",
           justifyContent: "center",
