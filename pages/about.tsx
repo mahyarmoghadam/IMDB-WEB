@@ -1,7 +1,6 @@
 import React from "react";
+import Navbar from "../components/Navbar/navbar";
 
 export default function about() {
-  return (
-    <>about page</>
-  );
+  return <p>about</p>;
 }

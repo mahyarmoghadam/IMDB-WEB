@@ -1,11 +1,8 @@
 import React from "react";
-import Header from "./header/header";
+import Navbar from "../components/Navbar/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import Minion1 from './minion1.png';
-import MinionBG from './minion-BG.jpg';
 import Image from "next/image";
-
 
 export default function FirstPage() {
   return (
@@ -13,13 +10,13 @@ export default function FirstPage() {
       <div
         className="w-full h-screen"
         style={{
-          backgroundImage: `url(${MinionBG.src})`,
+          backgroundImage: `url('/images/minion-BG.jpg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <Header />
+        <Navbar />
         <div
           className="columns-12 w-full"
           style={{
@@ -63,16 +60,16 @@ export default function FirstPage() {
                   margin: "10px",
                 }}
               >
-                <Image
+                {/* <Image
                   style={{
-                    backgroundImage: `url(${Minion1.src})`,
+                    // backgroundImage: `url(${Minion1.src})`,
                     borderRadius: "6px",
                   }}
                   src={Minion1.src}
                   alt="Landscape picture"
                   width={"100%"}
                   height={"180px"}
-                />
+                /> */}
                 <p
                   style={{
                     color: "white",
@@ -92,7 +89,7 @@ export default function FirstPage() {
                   margin: "10px",
                 }}
               >
-                <Image
+                {/* <Image
                   style={{
                     backgroundImage: `url(${Minion1.src})`,
                     borderRadius: "6px",
@@ -101,7 +98,7 @@ export default function FirstPage() {
                   alt="Landscape picture"
                   width={"100%"}
                   height={"180px"}
-                />
+                /> */}
                 <p
                   style={{
                     color: "white",
@@ -121,7 +118,7 @@ export default function FirstPage() {
                   margin: "10px",
                 }}
               >
-                <Image
+                {/* <Image
                   style={{
                     backgroundImage: `url(${Minion1.src})`,
                     borderRadius: "6px",
@@ -130,7 +127,7 @@ export default function FirstPage() {
                   alt="Landscape picture"
                   width={"100%"}
                   height={"180px"}
-                />
+                /> */}
                 <p
                   style={{
                     color: "white",
@@ -150,7 +147,7 @@ export default function FirstPage() {
                   margin: "10px",
                 }}
               >
-                <Image
+                {/* <Image
                   style={{
                     backgroundImage: `url(${Minion1.src})`,
                     borderRadius: "6px",
@@ -159,7 +156,7 @@ export default function FirstPage() {
                   alt="Landscape picture"
                   width={100}
                   height={"180px"}
-                />
+                /> */}
                 <p
                   style={{
                     color: "white",

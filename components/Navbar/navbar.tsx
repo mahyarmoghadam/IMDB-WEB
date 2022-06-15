@@ -1,13 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons";
-// import styles from "";
+import styles from "./navbar.module.css";
 
-export default function Header() {
+export default function Navbar() {
   return (
     <>
-      <nav
-        // className={styles.headerBody}
+      <p>Header</p>
+      {/* <nav
+        className={styles["header-body"]}
         style={{
           display: "flex",
           padding: "10px 5px",
@@ -58,8 +59,6 @@ export default function Header() {
             />
             Menu
           </button>
-
-          {/* <h3> <FaBeer /> </h3> */}
 
           <button
             style={{
@@ -191,7 +190,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 }
