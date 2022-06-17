@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   const [profile, setProfile] = useState(false);
   return (
     <>
-      <div className="absolute bg-gray-200 w-full h-full">
+      <div className="absolute h-screen justify-between bg-gray-200 w-full">
         {/* Navigation starts */}
         {/* Mobile */}
         <div
@@ -710,7 +710,7 @@ export default function Layout({ children }) {
           {children}
         </div>
 
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
