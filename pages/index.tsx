@@ -1,15 +1,10 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import header from "./header/header";
+import FirstPage from "./first-page";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <header />
-    </>
-  );
+  return <>
+    <p>home</p>
+  </>;
 };
 
 export default Home;
