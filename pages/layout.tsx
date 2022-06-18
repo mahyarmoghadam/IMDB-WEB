@@ -1,7 +1,11 @@
 import Footer from "@components/Footer/footer";
 import React, { useState } from "react";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   const [show, setShow] = useState(false);
   const [product, setProduct] = useState(false);
   const [deliverables, setDeliverables] = useState(false);
