@@ -1,4 +1,5 @@
 import Footer from "@components/Footer/footer";
+import Main from "@components/Main/main";
 import React, { useState } from "react";
 
 interface LayoutProps {
@@ -712,6 +713,7 @@ export default function Layout({ children }: LayoutProps) {
         {/* Page title starts */}
         <div className="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 ">
           {children}
+          <Main/>
         </div>
 
         <Footer />
