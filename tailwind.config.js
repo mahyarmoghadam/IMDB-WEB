@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,8 +7,5 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function ({ addComponents, theme }) {
-      
-    })
   ],
 }
