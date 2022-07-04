@@ -1,5 +1,6 @@
 import Footer from "@components/Footer/footer";
 import Main from "@components/Main/main";
+import Button from "@components/shared/Button/button";
 import React, { useState } from "react";
 
 interface LayoutProps {
@@ -711,12 +712,13 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
         {/* Navigation ends */}
         {/* Page title starts */}
-        <div className="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 ">
+        {/* <div className="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 ">
           {children}
-          <Main/>
+          <Main />
         </div>
 
-        <Footer />
+        <Footer /> */}
+        <Button text='Sign in' backgroundColor="black" />
       </div>
     </>
   );
