@@ -3,7 +3,7 @@ import FirstPage from "./first-page";
 
 const Home: NextPage = () => {
   return <>
-    <p>home</p>
+    {/* <p>home</p> */}
   </>;
 };
 
