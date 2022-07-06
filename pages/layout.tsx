@@ -1,5 +1,7 @@
 import Footer from "@components/Footer/footer";
 import Main from "@components/Main/main";
+import Button from "@components/shared/Button/button";
+import { BaseColor } from "./../models/enums/base-color.enum";
 import React, { useState } from "react";
 import CustomInput from "@components/shared/CustomInput/customInput";
 
@@ -433,7 +435,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
         {/* Mobile */}
-        <nav className="w-full mx-auto bg-white shadow">
+        {/* <nav className="w-full mx-auto bg-white shadow">
           <div className="container px-6 justify-between h-16 flex items-center lg:items-stretch mx-auto">
             <div className="h-full flex items-center">
               <div className="mr-10 flex items-center">
@@ -709,18 +711,16 @@ export default function Layout({ children }: LayoutProps) {
               </svg>
             </div>
           </div>
-        </nav>
+        </nav> */}
         {/* Navigation ends */}
         {/* Page title starts */}
         {/* <div className="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 ">
           {children}
-          <Main/>
+          <Main />
         </div>
 
         <Footer /> */}
-        <div>
-          <CustomInput />
-        </div>
+        <Button color={BaseColor.YELLOW} text='Sign in' backgroundColor={BaseColor.YELLOW} />
       </div>
     </>
   );
