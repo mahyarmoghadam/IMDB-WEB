@@ -5,7 +5,9 @@ import { Size, SIZE_MAPS } from './../../../models/enums/base-size.enum';
 
 
 export default function Button(props: ButtonModel) {
-  const { color, fontSize } = props
+  const { color, backgroundColor, fontSize } = props
+  console.log(fontSize);
+
   return (
     <>
       <button
@@ -15,8 +17,8 @@ export default function Button(props: ButtonModel) {
         //     border-${props.border}
         //     `}
         className={classNames(
-          COLOR_MAPS[BaseColor.BLACK],
-          SIZE_MAPS[Size.LARGE]
+          COLOR_MAPS[color ? color : BaseColor.BLACK],
+          SIZE_MAPS[fontSize ? fontSize : Size.LARGE]
         )}
       >
         {props.text}
@@ -33,7 +35,7 @@ export function classNames(
 
 Button.defaultProps = {
   color: BaseColor.GRAY,
-  fontSize: Size.SMALL,
+  fontSize: Size.LARGE,
 };
 
 Button.color = BaseColor;

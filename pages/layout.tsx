@@ -2,8 +2,8 @@ import Footer from "@components/Footer/footer";
 import Main from "@components/Main/main";
 import Button from "@components/lib/Button/button";
 import { BaseColor } from "./../models/enums/base-color.enum";
-// import * from './../components/index';
 import React, { useState } from "react";
+import { Size, SIZE_MAPS } from './../models/enums/base-size.enum';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -436,7 +436,8 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* <Footer /> */}
-        <Button color={BaseColor.YELLOW} text='Sign in' backgroundColor={BaseColor.YELLOW} />
+        <Button color={BaseColor.YELLOW} fontSize={Size.LARGE} text='Sign in' backgroundColor={BaseColor.YELLOW} />
+        <button className="p-2 bg-red-800">data</button>
       </div>
     </>
   );
