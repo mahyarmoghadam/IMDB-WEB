@@ -1,7 +1,11 @@
 import React, { ReactNode } from "react";
 import { ButtonModel } from "./button.model";
+import { BaseColor, COLOR_MAPS } from './../../../models/enums/base-color.enum';
+import { Size, SIZE_MAPS } from './../../../models/enums/base-size.enum';
+
 
 export default function Button(props: ButtonModel) {
+  const { color, fontSize } = props
   return (
     <>
       <button
@@ -11,8 +15,8 @@ export default function Button(props: ButtonModel) {
         //     border-${props.border}
         //     `}
         className={classNames(
-          VARIANT_MAPS[Variant.BLUE],
-          SIZE_MAPS[Size.SMALL]
+          COLOR_MAPS[BaseColor.BLACK],
+          SIZE_MAPS[Size.LARGE]
         )}
       >
         {props.text}
@@ -27,28 +31,35 @@ export function classNames(
   return classes.filter(Boolean).join(" ");
 }
 
-export enum Variant {
-  RED,
-  YELLOW,
-  GREEN,
-  BLUE,
-}
-export enum Size {
-  LARGE,
-  SMALL,
-}
-export type Props = {
-  variant: Variant;
-  children?: ReactNode;
-  size: Size;
+Button.defaultProps = {
+  color: BaseColor.GRAY,
+  fontSize: Size.SMALL,
 };
-export const SIZE_MAPS: Record<Size, string> = {
-  [Size.SMALL]: "px-2.5 text-xs",
-  [Size.LARGE]: "px-3 text-sm",
-};
-export const VARIANT_MAPS: Record<Variant, string> = {
-  [Variant.RED]: "bg-red-100 text-red-800",
-  [Variant.YELLOW]: "bg-yellow-100 text-yellow-800",
-  [Variant.GREEN]: "bg-green-100 text-green-800",
-  [Variant.BLUE]: "bg-blue-100 text-blue-800",
-};
+
+Button.color = BaseColor;
+Button.fontSize = SIZE_MAPS;
+// export enum Variant {
+//   RED,
+//   YELLOW,
+//   GREEN,
+//   BLUE,
+// }
+// export enum Size {
+//   LARGE,
+//   SMALL,
+// }
+// export type Props = {
+//   variant: Variant;
+//   children?: ReactNode;
+//   size: Size;
+// };
+// export const SIZE_MAPS: Record<Size, string> = {
+//   [Size.SMALL]: "px-2.5 text-xs",
+//   [Size.LARGE]: "px-3 text-sm",
+// };
+// export const VARIANT_MAPS: Record<Variant, string> = {
+//   [Variant.RED]: "bg-red-100 text-red-800",
+//   [Variant.YELLOW]: "bg-yellow-100 text-yellow-800",
+//   [Variant.GREEN]: "bg-green-100 text-green-800",
+//   [Variant.BLUE]: "bg-blue-100 text-blue-800",
+// };
