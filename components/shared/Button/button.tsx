@@ -11,7 +11,7 @@ export default function Button(props: ButtonModel) {
         //     border-${props.border}
         //     `}
         className={classNames(
-          VARIANT_MAPS[props.color ?? Variant.BLUE],
+          VARIANT_MAPS[Variant.BLUE],
           SIZE_MAPS[Size.SMALL]
         )}
       >

@@ -1,22 +1,4 @@
-export interface ButtonModel extends BaseStyle{
-  
-}
+import { BaseStyle } from "models/base-style.model";
 
-
-export interface BaseStyle {
-    backgroundColor?: string;
-    color?: Variant;
-    fontSize?: string;
-    border?: string;
-    text?: string;
-    borderRadius?: string;
-    borderWidth?: string;
-}
-
-
-export enum Variant {
-    RED,
-    YELLOW,
-    GREEN,
-    BLUE,
+export interface ButtonModel extends BaseStyle {
 }
