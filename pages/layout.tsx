@@ -1,7 +1,7 @@
 import Footer from "@components/Footer/footer";
 import Main from "@components/Main/main";
 import Button from "@components/shared/Button/button";
-import { Variant } from "@components/shared/Button/button.model";
+import { BaseColor } from "./../models/enums/base-color.enum";
 import React, { useState } from "react";
 
 interface LayoutProps {
@@ -719,7 +719,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         <Footer /> */}
-        <Button color={Variant.YELLOW} text='Sign in' backgroundColor="black" />
+        <Button color={BaseColor.YELLOW} text='Sign in' backgroundColor={BaseColor.YELLOW} />
       </div>
     </>
   );
