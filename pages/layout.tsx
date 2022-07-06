@@ -436,8 +436,8 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* <Footer /> */}
-        <Button color={BaseColor.YELLOW} fontSize={Size.LARGE} text='Sign in' backgroundColor={BaseColor.YELLOW} />
-        <button className="p-2 bg-red-800">data</button>
+        {/* <Button color={BaseColor.YELLOW} fontSize={Size.LARGE} text='Sign in' backgroundColor={BaseColor.YELLOW} /> */}
+        <button className="p-2 bg-red-800 rounded-md border-right border-gray-800">data</button>
       </div>
     </>
   );
