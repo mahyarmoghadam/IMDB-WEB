@@ -4,7 +4,6 @@ import Button from "@components/lib/Button/button";
 import { BaseColor } from "./../models/enums/base-color.enum";
 // import * from './../components/index';
 import React, { useState } from "react";
-import CustomInput from "@components/shared/CustomInput/customInput";
 
 interface LayoutProps {
   children: React.ReactNode;
