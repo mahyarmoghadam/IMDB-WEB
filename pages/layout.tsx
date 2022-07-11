@@ -17,7 +17,11 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="mt-4 ml-4">
-          <CustomSearchInput/>
+          <CustomSearchInput
+            onChange={(e: any) => console.log(e.target.value)}
+            onClick={() => console.log('clicked')}
+            placeholder={'What Are You Looking For?'}
+          />
       </div>
     </>
   );

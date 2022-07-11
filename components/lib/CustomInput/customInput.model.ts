@@ -1,7 +1,7 @@
-export interface ICustomInput {
-    backgroundColor?: string;
-    textColor?: string;
-    width?: number;
-    height?: string;
-    type?: string;
+import { ChangeEventHandler } from "react";
+export interface ICustomSearchInput {
+    onClick: React.MouseEventHandler<HTMLButtonElement>;
+    onChange: ChangeEventHandler<HTMLInputElement>;
+    isDisable?: boolean;
+    placeholder?: string;
 }
