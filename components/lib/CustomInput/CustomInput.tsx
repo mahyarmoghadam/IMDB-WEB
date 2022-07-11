@@ -1,26 +1,19 @@
-import { ICustomInput } from './customInput.model';
+import { FaSearch } from 'react-icons/fa';
 
-const customInput = (props: ICustomInput) => {
-
-    const { 
-        type = 'text',
-        backgroundColor = 'red-900',
-        textColor = 'black',
-        width = 7
-    }= props;
-
+const CustomSearchInput = () => {
   return (
     <>
-        <input
-            type={type}
-            className={
-                `bg-${backgroundColor}
-                text-${textColor}
-                w-${width}`
-            }
-        />
+      <div className='flex flex-row'>
+          <button className="h-10 bg-gray-300 rounded-l p-2 text-white pl-4">
+              <FaSearch/>
+          </button>
+          <input
+            className='w-80 h-10 bg-gray-300 rounded-r p-2 focus:outline-none'
+            placeholder='What Are You Looking For?'
+          />
+      </div>
     </>
   )
 }
 
-export default customInput;
+export default CustomSearchInput
