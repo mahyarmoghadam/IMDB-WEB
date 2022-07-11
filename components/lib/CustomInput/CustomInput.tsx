@@ -16,4 +16,4 @@ const CustomSearchInput = () => {
   )
 }
 
-export default CustomSearchInput
+export default CustomSearchInput;
