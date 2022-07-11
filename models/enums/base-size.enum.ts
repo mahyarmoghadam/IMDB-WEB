@@ -7,9 +7,9 @@ export enum Size {
 }
 
 export const SIZE_MAPS: Record<Size, string> = {
-    [Size.SMALL]: "px-2.5 text-xs",
-    [Size.MEDIUM]: "px-3 text-sm",
-    [Size.LARGE]: "p-2 text-lg",
-    [Size.XLARGE]: "px-5 text-xl",
-    [Size.XXLARGE]: "px-6 text-xxl"
+    [Size.SMALL]: "text-xs",
+    [Size.MEDIUM]: "text-sm",
+    [Size.LARGE]: "text-lg",
+    [Size.XLARGE]: "text-xl",
+    [Size.XXLARGE]: "text-2xl"
 };
