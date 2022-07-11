@@ -30,13 +30,13 @@ export default function Main() {
 
       <div className="carousel-inner relative w-full overflow-hidden">
         <div className="carousel-item active relative float-left w-full">
-          {/* <Image
-                                src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"}
+          <Image
+            src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"}
             className="block w-full"
             alt="Motorbike Smoke"
-            width={10}
-            height={10}
-          /> */}
+            width={"100%"}
+            height={200}
+          />
           <div className="carousel-caption hidden md:block absolute text-center">
             <h5 className="text-xl">First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
@@ -44,13 +44,13 @@ export default function Main() {
         </div>
 
         <div className="carousel-item relative float-left w-full">
-          {/* <Image
-                                src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"}
+          <Image
+            src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"}
             className="block w-full"
             alt="Mountaintop"
-            width={10}
-            height={10}
-          /> */}
+            width={'100%'}
+            height={200}
+          />
           <div className="carousel-caption hidden md:block absolute text-center">
             <h5 className="text-xl">Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
@@ -58,13 +58,13 @@ export default function Main() {
         </div>
 
         <div className="carousel-item relative float-left w-full">
-          {/* <Image
-                                src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"}
+          <Image
+            src={"https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"}
             className="block w-full"
             alt="Woman Reading a Book"
-            width={10}
-            height={10}
-          /> */}
+            width={"100%"}
+            height={200}
+          />
           <div className="carousel-caption hidden md:block absolute text-center">
             <h5 className="text-xl">Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
