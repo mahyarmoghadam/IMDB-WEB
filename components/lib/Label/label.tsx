@@ -6,13 +6,13 @@ export default function Label(props: any) {
         <>
             <div
                 className={
-                    `${props.textColor} ${props.padding} ${props.backgroundColor} 
+                    `${props.textColor} ${props.padding} ${props.backgroundColor} ${props.rotate}
                      rounded ${props.font} ${props.textSize} w-fit`
                 }
             >
                 <span className="flex justify-center justify-items-center items-center">
                     <span className="mr-1">{props.icon}</span>
-                    <span>{props.text}</span>
+                    <span className={`${props.textRotate}`}>{props.text}</span>
                 </span>
             </div>
         </>

@@ -36,6 +36,12 @@ export default function Layout({ children }: LayoutProps) {
           <Label text='8.8' font='font-sans' textSize='text-sm'
             padding='px-3 py-1' backgroundColor='bg-yellow-400' textColor='text-black'
             icon={<FaStar />} />
+          <Label text='Fight Club' font='font-sans font-bold' textSize='text-5xl'
+            padding='px-3 py-1' textColor='text-white' />
+          <Label text='Drama' font='font-sans' textSize='text-sm' textRotate='rotate-180'
+            padding='px-3 py-1' backgroundColor='bg-black' textColor='text-yellow-400' rotate='rotate-90' />
+          <Label text='Director' font='font-sans font-bold' textSize='text-2xl'
+            padding='px-3 py-1' textColor='text-white' />
         </div>
 
       </div>
