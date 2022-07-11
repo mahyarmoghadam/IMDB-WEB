@@ -6,6 +6,7 @@ import React, { useState } from "react";
 // import { Size, SIZE_MAPS } from './../models/enums/base-size.enum';
 import Label from "@components/lib/Label/label";
 import { FaStar } from 'react-icons/fa';
+import CardInfo from "@components/lib/CardInfo/cardInfo";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,6 +17,12 @@ export default function Layout({ children }: LayoutProps) {
   const [product, setProduct] = useState(false);
   const [deliverables, setDeliverables] = useState(false);
   const [profile, setProfile] = useState(false);
+
+  let dataSource = [
+    { name: 'David Fincher', jobPosition: 'Director' },
+    { name: 'Brad Pitt', jobPosition: 'Tyler Durden' },
+    { name: 'Edward Norton', jobPosition: 'Naarotor' }
+  ]
   return (
     <>
       <div className="absolute h-screen justify-between bg-gray-200 w-full">
@@ -42,6 +49,13 @@ export default function Layout({ children }: LayoutProps) {
             padding='px-3 py-1' backgroundColor='bg-black' textColor='text-yellow-400' rotate='rotate-90' />
           <Label text='Director' font='font-sans font-bold' textSize='text-2xl'
             padding='px-3 py-1' textColor='text-white' />
+        </div>
+
+
+        <div>
+          <CardInfo source={dataSource} textColorJob='text-white'
+            fontJob='font-sans' textSizeJob='text-sm' textColorName='text-white'
+            fontName='font-sans' textSizeName='text-lg' />
         </div>
 
       </div>
