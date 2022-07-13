@@ -1,15 +1,10 @@
 export enum Size {
-    SMALL,
-    MEDIUM,
-    LARGE,
-    XLARGE,
-    XXLARGE
+  "xs" = "xs",
+  "sm" = "sm",
+  "lg" = "lg",
+  "xl" = "xl",
+  "2xl" = "2xl",
+  "3xl" = "3xl",
+  "4xl" = "4xl",
+  "5xl" = "5xl",
 }
-
-export const SIZE_MAPS: Record<Size, string> = {
-    [Size.SMALL]: "text-xs",
-    [Size.MEDIUM]: "text-sm",
-    [Size.LARGE]: "text-lg",
-    [Size.XLARGE]: "text-xl",
-    [Size.XXLARGE]: "text-2xl"
-};
